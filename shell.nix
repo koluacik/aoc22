@@ -5,6 +5,7 @@ pkgs.mkShell {
     cabal-install
     ormolu
     (haskellPackages.ghcWithHoogle (hp: with hp; [
+      attoparsec
     ]))
   ];
 }
